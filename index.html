@@ -6,6 +6,9 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
+  <!-- Bootstrap links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -14,11 +17,11 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="border border-primary-subtle w-100 mx-auto my-auto">
 
   <!-- Sign-up form start -->
-
-  Stay updated!
+  <section className="d-flex  w-50 bg-secondary border border-dark-subtle">
+ <h1>Stay updated!</h1> 
 
   Join 60,000+ product managers receiving monthly updates on:
 
@@ -28,9 +31,15 @@
 
   Email address
   email@company.com
-
+  <input type="text" class="form-control w-25" >
   Subscribe to monthly newsletter
-
+ <img
+  src=assets/images/illustration-sign-up-desktop.svg
+  class="d-flex w-25 h-50 border border-dark-subtle"
+  alt="..."
+></img>
+  </section>
+ 
   <!-- Sign-up form end -->
 
   <!-- Success message start -->
@@ -46,7 +55,7 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Blessie Reside</a>.
   </div>
 </body>
 </html>
